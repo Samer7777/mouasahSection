@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--==========- start all links ==============-->
+
+    <!--start font awesom cdn link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--end font awesom cdn link-->
+
+    <!--start bootstrap link-->
+    <link rel="stylesheet" href="./assest/css/bootstrap.css" />
+    <!--end bootstrap link---->
+
+    <!--start main style css-->
+    <link rel="stylesheet" href="./assest/css/samerStyle.css" />
+    <!--end main style css---->
+
+    <!--==========- end all links ================-->
+    <title>Mouasah</title>
+  </head>
+  <body>
+    <!--start section-->
+    <section class="contact_us" id="">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 px-2 mb-4">
+            <div class="contact_card">
+              <div class="contact_item_img">
+                <img src="./assest/img/settings.png" alt="pic" />
+              </div>
+              <div class="contact_item_body">
+                <div class="body_text">
+                  <h2>Social Media</h2>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="contact_item_footer">
+                <div class="footer_social_icon">
+                  <a href="#" target="blank">
+                    <img src="./assest/img/facebook.png" alt="pic" />
+                  </a>
+                </div>
+                <div class="footer_social_icon">
+                  <a href="#" target="blank">
+                    <img src="./assest/img/twitter.png" alt="pic" />
+                  </a>
+                </div>
+                <div class="footer_social_icon">
+                  <a href="#" target="blank">
+                    <img src="./assest/img/linkedin.png" alt="pic" />
+                  </a>
+                </div>
+                <div class="footer_social_icon">
+                  <a href="#" target="blank">
+                    <img src="./assest/img/youtube.png" alt="pic" />
+                  </a>
+                </div>
+                <div class="footer_social_icon">
+                  <a href="#" target="blank">
+                    <img src="./assest/img/instagram.png" alt="pic" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 px-2 mb-4">
+            <div class="contact_card">
+              <div class="contact_item_img">
+                <img src="./assest/img/settings.png" alt="pic" />
+              </div>
+              <div class="contact_item_body">
+                <div class="body_text">
+                  <h2>Mobile Application</h2>
+                  <p>Lorem ipsum dolor sit, amet consectetur</p>
+                </div>
+              </div>
+              <div class="contact_item_footer">
+                <a href="#" target="blank" class="btn get_app">
+                  <img
+                    src="https://greatex.org/wp-content/uploads/2019/07/App-img-for-Web-v4lb.png"
+                    alt="pic"
+                  />
+                </a>
+                <a href="#" target="blank" class="btn get_app">
+                  <img
+                    src="https://greatex.org/wp-content/uploads/2019/07/App-img-for-Web-v4lb.png"
+                    alt="pic"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 px-2 mb-4">
+            <div class="contact_card">
+              <div class="contact_item_img">
+                <img src="./assest/img/settings.png" alt="pic" />
+              </div>
+              <div class="contact_item_body">
+                <div class="body_text">
+                  <h2>Contact Us</h2>
+                  <p>Lorem ipsum dolor sit, amet consectetur</p>
+                </div>
+              </div>
+              <div class="contact_item_footer">
+                <button
+                  class="btn form_btn"
+                  id="formBtn"
+                  onclick="showAndHide()"
+                >
+                  <a href="#messageForm">
+                    Fill Form <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 px-2 mb-4">
+            <div class="contact_card">
+              <div class="contact_item_img">
+                <img src="./assest/img/settings.png" alt="pic" />
+              </div>
+              <div class="contact_item_body">
+                <div class="body_text">
+                  <h2>Social Media</h2>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="contact_item_footer">
+                <div class="footer_social_icon">
+                  <a href="#" target="blank">
+                    <img src="./assest/img/whatsapp.png" alt="pic" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!---start form row-->
+        <div class="message_form" id="messageForm">
+          <h2>Send a Message</h2>
+          <form>
+            <div class="row justify-content-center">
+              <div class="col-md-7 px-40">
+                <div class="col-12 mb-3">
+                  <input
+                    type="text"
+                    class="form-control input_div"
+                    placeholder="First Name"
+                  />
+                  <span class="star">*</span>
+                </div>
+                <div class="col-12 mb-3">
+                  <input
+                    type="text"
+                    class="form-control input_div"
+                    placeholder="Last Name"
+                  />
+                  <span class="star">*</span>
+                </div>
+                <div class="col-12 mb-3">
+                  <input
+                    type="email"
+                    class="form-control input_div"
+                    placeholder="Email"
+                  />
+                  <span class="star">*</span>
+                </div>
+                <div class="col-12 mb-3">
+                  <input
+                    type="text"
+                    class="form-control input_div"
+                    placeholder="Telephone Number"
+                  />
+                  <span class="star">*</span>
+                </div>
+                <div class="col-12 mb-3">
+                  <textarea
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="5"
+                    class="form-control input_div"
+                    placeholder="Your Message..."
+                  ></textarea>
+                </div>
+                <!--start reCAPTCHA-->
+                <div class="col-12 mb-3"></div>
+                <!--end reCAPTCHA-->
+                <div class="col-12 mb-3">
+                  <button class="btn send_message w-100" type="submit">
+                    Send
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!---end form row-->
+      </div>
+    </section>
+    <!--end section---->
+
+    <!--start My script-->
+    <script>
+      function showAndHide() {
+        var x = document.getElementById("messageForm");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+      const formBtn = document.getElementById("formBtn");
+      formBtn.addEventListener("click", () => {
+        formBtn.classList.toggle("show");
+      });
+    </script>
+    <!--end My script-->
+  </body>
+</html>
