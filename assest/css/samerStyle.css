@@ -155,8 +155,10 @@ html {
 .form_btn.show {
   background-color: #1b1a3c;
 }
-.form_btn.show:hover {
-  background-color: #ff7b98;
+@media (min-width: 1024px) {
+  .form_btn.show:hover {
+    background-color: #ff7b98;
+  }
 }
 .form_btn i {
   transition: 0.3s ease-in-out;
